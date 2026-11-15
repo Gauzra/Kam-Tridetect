@@ -1,0 +1,62 @@
+# Environment and secrets (JANGAN DI-PUSH: memuat kredensial lokal)
+.env
+.env.*
+!.env.example
+*.env
+
+# Dependencies (JANGAN DI-PUSH: sangat berat dan diinstal via npm / pip)
+node_modules/
+*/node_modules/
+venv/
+.venv/
+env/
+*/env/
+ENV/
+__pycache__/
+*/__pycache__/
+
+# Build outputs (JANGAN DI-PUSH: hasil build dapat di-generate ulang)
+dist/
+*/dist/
+build/
+coverage/
+
+# Python compiled & cache
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Logs (JANGAN DI-PUSH: file log lokal)
+*.log
+*/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Uploads, file sementara & debug outputs (JANGAN DI-PUSH)
+uploads/
+*/uploads/*
+!*/uploads/.gitkeep
+temp/
+tmp/
+temp_*
+debug_*.txt
+hasil_*.txt
+*.pdf
+
+# Local database and backups
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Internal documentation and design notes (JANGAN DI-PUSH)
+dokumentasi.md
+design.md

@@ -1,0 +1,219 @@
+/* ============================================================
+   ConfirmModal.css
+   KAM-TRIDETECT — Custom Interactive Confirmation Dialog
+   Modern, Secure & Accessible Pop-Up Confirmation
+   ============================================================ */
+
+.confirm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: confirmFadeIn 180ms ease-out;
+}
+
+@keyframes confirmFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.confirm-dialog-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.2), 0 4px 12px rgba(15, 23, 42, 0.08);
+  max-width: 460px;
+  width: 100%;
+  padding: 28px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  animation: confirmScaleIn 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes confirmScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.confirm-close-icon-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: #94A3B8;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 140ms ease;
+}
+
+.confirm-close-icon-btn:hover {
+  background: var(--workspace);
+  color: var(--navy);
+}
+
+.confirm-dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.confirm-icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.confirm-badge-danger {
+  background: var(--danger-bg);
+  border: 1px solid #FECACA;
+}
+
+.confirm-badge-warning {
+  background: var(--warning-bg);
+  border: 1px solid #FDE68A;
+}
+
+.confirm-badge-info {
+  background: var(--blue-tint);
+  border: 1px solid #BDD3F5;
+}
+
+.confirm-icon {
+  font-size: 24px;
+}
+
+.confirm-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.confirm-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.confirm-message {
+  font-size: 13px;
+  color: var(--slate);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── ACTION BUTTONS ── */
+.confirm-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.btn-confirm-cancel {
+  background: var(--workspace);
+  border: 1px solid var(--border);
+  color: var(--navy);
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all 150ms ease;
+  flex: 1;
+}
+
+.btn-confirm-cancel:hover {
+  background: #E2E8F0;
+  border-color: #CBD5E1;
+}
+
+.btn-confirm-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: var(--font);
+  border: none;
+  transition: all 160ms ease;
+  flex: 1;
+}
+
+.btn-submit-danger {
+  background: var(--danger);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.25);
+}
+
+.btn-submit-danger:hover {
+  background: #B91C1C;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-submit-warning {
+  background: var(--warning);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.25);
+}
+
+.btn-submit-warning:hover {
+  background: #B45309;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-submit-info {
+  background: var(--blue);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(53, 106, 230, 0.25);
+}
+
+.btn-submit-info:hover {
+  background: #2454C7;
+  box-shadow: 0 4px 12px rgba(53, 106, 230, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-confirm-submit .btn-icon {
+  font-size: 15px;
+}
+
