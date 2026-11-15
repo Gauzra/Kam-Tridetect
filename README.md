@@ -12,8 +12,6 @@
 
 Sistem mengekstraksi bagian naratif **Laporan Auditor Independen** (khususnya seksi **Hal Audit Utama / Key Audit Matters**) dari berkas PDF laporan keuangan menggunakan pendekatan hibrida (*Smart Digital Extraction + Tesseract OCR*), kemudian memproses teks bahasa Indonesia menggunakan *Natural Language Processing (NLP)* untuk mengukur frekuensi risiko pada **9 dimensi manipulasi laba** dan menyajikan skor risiko 0–100 secara terstruktur.
 
-> 📖 **Dokumentasi Lengkap:**  
-> Untuk penjelasan mendalam mengenai kerangka teori TEM, metodologi riset, spesifikasi 9 dimensi, arsitektur microservices, algoritma skoring, dan referensi REST API, silakan baca **[dokumentasi.md](dokumentasi.md)**.
 
 ---
 
