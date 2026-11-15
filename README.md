@@ -145,5 +145,4 @@ kam-tridetect/
 
 Platform ini dikembangkan untuk tujuan riset akademik, audit forensik, dan tata kelola emiten berbasis *Design Science Research* (DSR).
 
-- **Dokumentasi Mendalam**: Lihat **[dokumentasi.md](dokumentasi.md)**
 - **Standar Terkait**: Standar Audit 701 (SA 701), Standar Audit 240 (SA 240), PSAK 71, 72, 73, dan kerangka *Earnings Management*.
